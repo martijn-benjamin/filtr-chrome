@@ -1,0 +1,31 @@
+{
+  "name": "Filtr",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Stop being clickbait prey. Filtr your news.",
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "js/badges.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
