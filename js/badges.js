@@ -77,7 +77,7 @@ observeDOM(document.body, function () {
 
         if (arr.length !== arr2.length) {
 
-            console.warn('changed');
+
 
             domains = domainUpdate;
 
@@ -92,7 +92,7 @@ observeDOM(document.body, function () {
 
                     var result = JSON.parse(xhr.responseText);
 
-                    console.info(result);
+
 
                     // clear previously injected badges
                     for (var b = 0; b < badges.length; b++) {
@@ -134,7 +134,6 @@ observeDOM(document.body, function () {
                 }
             };
 
-            console.info(JSON.stringify(domains));
 
             xhr.send(JSON.stringify(domains));
         }

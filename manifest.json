@@ -25,6 +25,8 @@
   },
   "permissions": [
     "tabs",
-    "https://filtr.news/*"
+    "https://filtr.news/*",
+    "http://*/",
+    "https://*/"
   ]
 }
